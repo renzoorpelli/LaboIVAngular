@@ -1,4 +1,4 @@
-<h1>{{this.title}}</h1>
+<!-- <h1>{{this.title}}</h1>
 
 <div class="container">
 
@@ -12,13 +12,24 @@
 </div>
 
 
-<input [(ngModel)] = "numero1"> NgModel perteneciente al modulo de  Forms
-<input [(ngModel)] = "numero2">
+<input [(ngModel)] = "numero1" [type]="numero1"> NgModel perteneciente al modulo de  Forms
+<input [(ngModel)] = "numero2" [type]="numero2">
 
 <button (click)="onSumar()">Sumar</button>
 
-<h2>{{this.numero3}}</h2>
+<h2>{{this.numero3}}</h2> -->
+
 
 
 <!-- <img [src] = "dsadas"> le pegas al atributo que contenga la imagen -->
-<app-ejercicio-edad></app-ejercicio-edad>
+<!-- <app-ejercicio-edad></app-ejercicio-edad>  EJERCICIO 1 SUMAR EDAD-->
+
+
+
+<!-- IMPLEMENTACION RUTEO -->
+<main>
+  <router-outlet></router-outlet>
+  <!-- This nav gives you links to click, which tells the router which route to use (defined in the routes constant in  AppRoutingModule) -->
+
+</main>
+

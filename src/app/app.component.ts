@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+ import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -18,7 +18,8 @@ export class AppComponent {
   }
 
   onSumar(){
-    this.numero3 = Number(this.numero1) + Number(this.numero2);
+    //this.numero3 = Number(this.numero1) + Number(this.numero2);
+    this.numero3 = this.numero1 + this.numero2;
   }
 
 

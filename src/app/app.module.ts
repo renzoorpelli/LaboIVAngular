@@ -6,7 +6,9 @@ import { FormsModule } from '@angular/forms';
 import { LoginComponent } from './components/login/login.component';
 import { ErrorComponent } from './components/error/error.component';
 import { BienvenidoComponent } from './components/bienvenido/bienvenido.component';
+import { AppRoutingModule } from './app-routing.module';
 import { EjercicioEdadComponent } from './ejercicio-edad/ejercicio-edad.component';
+// import { EjercicioEdadComponent } from './ejercicio-edad/ejercicio-edad.component';
 
 
 @NgModule({
@@ -19,7 +21,8 @@ import { EjercicioEdadComponent } from './ejercicio-edad/ejercicio-edad.componen
   ],
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
