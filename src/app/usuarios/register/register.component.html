@@ -1,0 +1,23 @@
+<form (ngSubmit) = addUser()>
+  <div class="container">
+    <div class="mb-3">
+      <label for="txtMail" class="form-label">Mail:</label>
+      <input type="mail" id="txtMail" class="form-control" [(ngModel)]="mail" placeholder="Ingrese su Mail" [ngModelOptions]="{standalone: true}">
+      <small class="text-danger"></small>
+    </div>
+    <div class="mb-3">
+      <label for="txtPassword" class="form-label">Contraseña:</label>
+      <input type="password" id="txtPassword" class="form-control" [(ngModel)]="password" placeholder="Ingrese su Contraseña" [ngModelOptions]="{standalone: true}">
+      <small class="text-danger"></small>
+    </div>
+    <div class="mb-3">
+      <label for="txtConfirmPassword" class="form-label">Confirme su contraseña:</label>
+      <input type="password" id="txtConfirmPassword"  [(ngModel)]="confirmPassword" class="form-control" placeholder="Ingrese su Contraseña" [ngModelOptions]="{standalone: true}">
+      <small class="text-danger"></small>
+    </div>
+    <div class="mb-3">
+      <button class="btn btn-primary">Registrarme</button>
+      <button class="btn btn-danger" routerLink="/">Volver</button>
+    </div>
+  </div>
+</form>

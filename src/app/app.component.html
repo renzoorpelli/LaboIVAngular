@@ -1,35 +1,21 @@
-<!-- <h1>{{this.title}}</h1>
-
-<div class="container">
-
-    <div>
-      <label for="txtMail" id="lblMail"></label>
-      <input [(ngModel)] = "input" placeholder="Ingrese Edad">
+<header>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Ejemplo App</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" routerLink="/usuarios/login">Iniciar Sesion</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" routerLink="/usuarios/register">Registrarse</a>
+          </li>
+        </ul>
+      </div>
     </div>
-    <div>
-      <button (click)="onSubmit('sdadasdsa')">Enviar</button>
-    </div>
-</div>
-
-
-<input [(ngModel)] = "numero1" [type]="numero1"> NgModel perteneciente al modulo de  Forms
-<input [(ngModel)] = "numero2" [type]="numero2">
-
-<button (click)="onSumar()">Sumar</button>
-
-<h2>{{this.numero3}}</h2> -->
-
-
-
-<!-- <img [src] = "dsadas"> le pegas al atributo que contenga la imagen -->
-<!-- <app-ejercicio-edad></app-ejercicio-edad>  EJERCICIO 1 SUMAR EDAD-->
-
-
-
-<!-- IMPLEMENTACION RUTEO -->
-<main>
-  <router-outlet></router-outlet>
-  <!-- This nav gives you links to click, which tells the router which route to use (defined in the routes constant in  AppRoutingModule) -->
-
-</main>
-
+  </nav>
+</header>
+<router-outlet></router-outlet>

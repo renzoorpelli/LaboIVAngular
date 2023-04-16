@@ -1,11 +1,12 @@
-@import "~bootstrap/dist/css/bootstrap.css";
-
 .container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh; /* para que ocupe todo el alto de la pantalla */
+  height: 90vh; /* para que ocupe todo el alto de la pantalla */
   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
 }
 
+button {
+  margin-right: 10px;
+}
